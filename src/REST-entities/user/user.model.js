@@ -23,4 +23,9 @@ export const userSignUpScheme = Joi.object({
   phone: Joi.string().min(6).max(20),
 });
 
+export const userSignInScheme = Joi.object({
+  login: Joi.string().max(32).required(),
+  password: Joi.string().min(6).required(),
+});
+
 export default User;
