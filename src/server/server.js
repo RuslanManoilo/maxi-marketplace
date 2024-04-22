@@ -1,4 +1,4 @@
-import { sequelize } from "../db/db.js";
+import sequelize from "../db/db.js";
 import app from "./app.js";
 
 const { PORT = 6969 } = process.env;
